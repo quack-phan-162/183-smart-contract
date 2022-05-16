@@ -102,7 +102,6 @@ contract Defi {
     require(isLoaned[msg.sender] == true, 'ERROR. A LOAN IS NOT ACTIVE');
     //Defi must approve transfer
     require(token.transferFrom(msg.sender, address(this), collateralEth[msg.sender]/2), 'ERROR. TOKENS NOT RETRIEVABLE');
-    
     //5% fee
     uint fee = collateralEth[msg.sender]/5;
 
