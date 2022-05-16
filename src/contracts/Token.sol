@@ -13,7 +13,7 @@ contract Token is ERC20{
     event MinterChanged(address indexed from, address to);
 
     //Initialize token
-    constructor() public payable ERC20("Decentralized Finances", "183Defi"){
+    constructor() public payable ERC20("183DecentralizedFinances", "183Defi"){
         minter = msg.sender;
     }
 
